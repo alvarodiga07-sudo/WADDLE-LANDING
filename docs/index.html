@@ -10,6 +10,36 @@
     <meta property="og:type" content="website" />
     <base href="/WADDLE-LANDING/">
     <title>Waddle · Viaja a tu manera</title>
+    <style id="mobile-hero-fixes">
+      /* === Arreglos responsive de la cabecera (Hero) solo en móvil === */
+      @media (max-width: 767px) {
+        /* La sección Hero deja de forzar 100vh para que no se corte el contenido */
+        .mesh-bg {
+          min-height: auto !important;
+          padding-top: 5.5rem !important;
+          padding-bottom: 2.5rem !important;
+        }
+        /* El globo (div con tamaño inline 440px) se reduce y nunca desborda */
+        .mesh-bg [style*="440px"] {
+          width: min(300px, 78vw) !important;
+          height: min(300px, 78vw) !important;
+        }
+        /* Título un punto más pequeño para que no se corte en pantallas estrechas */
+        .mesh-bg h1 {
+          font-size: 2.4rem !important;
+          line-height: 1.08 !important;
+        }
+        /* Ocultar el indicador "Descubre más" en móvil (se solapaba con los botones) */
+        .mesh-bg .bottom-6 {
+          display: none !important;
+        }
+        /* Margen extra debajo del globo para que la pista "Arrastra" respire */
+        .mesh-bg .md\:justify-end {
+          margin-top: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />

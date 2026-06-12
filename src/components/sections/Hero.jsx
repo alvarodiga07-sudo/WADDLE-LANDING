@@ -7,7 +7,7 @@ export default function Hero({ onCountrySelect }) {
   const go = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <section className="relative min-h-screen mesh-bg flex items-center pt-24 pb-12 overflow-hidden">
+    <section className="relative md:min-h-screen mesh-bg flex items-center pt-24 pb-12 md:pb-12 overflow-hidden">
       {/* Patrón sutil de estrellas (guiño al pasaporte) */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(circle, #5c3d11 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
