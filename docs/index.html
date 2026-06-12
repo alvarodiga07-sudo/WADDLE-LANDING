@@ -42,6 +42,29 @@
           margin-top: 1.5rem;
           margin-bottom: 0.5rem;
         }
+
+        /* === Centrar el contenido de las tarjetas/recuadros en móvil === */
+        /* (los mockups del iPhone usan rounded-full, así que NO se ven afectados) */
+        .bg-white.rounded-3xl,
+        .bg-ink.rounded-3xl,
+        .border-cream-deep,
+        .rounded-2xl.border {
+          text-align: center !important;
+        }
+        /* Centrar las cajas de icono (cuadradas) dentro de las tarjetas */
+        .bg-white.rounded-3xl [class*="rounded-2xl"],
+        .bg-ink.rounded-3xl [class*="rounded-2xl"],
+        .border-cream-deep [class*="rounded-2xl"],
+        .bg-white.rounded-3xl [class*="rounded-xl"],
+        .border-cream-deep [class*="rounded-xl"] {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* Las listas con viñetas/filas flex dentro de tarjetas se centran */
+        .bg-white.rounded-3xl .flex.items-start,
+        .border-cream-deep .flex.items-start {
+          justify-content: center !important;
+        }
       }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
