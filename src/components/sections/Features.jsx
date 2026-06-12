@@ -74,13 +74,15 @@ function FeatureRow({ tag, title, desc, bullets, phone, reverse }) {
 
 /* ─── Pantallas recreadas en CSS ─── */
 
+const BASE = import.meta.env.BASE_URL; // respeta la subcarpeta de GitHub Pages
+
 function PassportScreen() {
   // Cuños reales de la app (PNG optimizados)
   const stamps = [
-    { img: '/stamps/Espana.png', d: '1 may 2025', dur: '4 días', rot: -4 },
-    { img: '/stamps/Japon.png', d: '6 jun 2026', dur: '7 días', rot: 3 },
-    { img: '/stamps/Italia.png', d: '12 jul 2026', dur: '5 días', rot: -3 },
-    { img: '/stamps/Marruecos.png', d: '3 ago 2026', dur: '4 días', rot: 4 },
+    { img: `${BASE}stamps/Espana.png`, d: '1 may 2025', dur: '4 días', rot: -4 },
+    { img: `${BASE}stamps/Japon.png`, d: '6 jun 2026', dur: '7 días', rot: 3 },
+    { img: `${BASE}stamps/Italia.png`, d: '12 jul 2026', dur: '5 días', rot: -3 },
+    { img: `${BASE}stamps/Marruecos.png`, d: '3 ago 2026', dur: '4 días', rot: 4 },
   ];
   return (
     <PhoneMockup>
@@ -113,7 +115,7 @@ function PassportScreen() {
 function SocialScreen() {
   return (
     <PhoneMockup>
-      <div className="h-full relative bg-cover bg-center" style={{ backgroundImage: 'url(/img/santorini.jpg)' }}>
+      <div className="h-full relative bg-cover bg-center" style={{ backgroundImage: `url(${BASE}img/santorini.jpg)` }}>
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/25" />
         {/* topbar */}
         <div className="absolute top-3 left-0 right-0 px-4 flex items-center justify-between text-white text-xs font-bold">

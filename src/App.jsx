@@ -6,6 +6,7 @@ import Hero from './components/sections/Hero';
 import Problem from './components/sections/Problem';
 import Solution from './components/sections/Solution';
 import Demo from './components/sections/Demo';
+import WizardDemo from './components/sections/WizardDemo';
 import Features from './components/sections/Features';
 import Market from './components/sections/Market';
 import WhyNow from './components/sections/WhyNow';
@@ -26,6 +27,7 @@ export default function App() {
         <Problem />
         <Solution />
         <Demo onCountrySelect={setDemoId} />
+        <WizardDemo />
         <Features />
         <Market />
         <WhyNow />

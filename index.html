@@ -9,6 +9,22 @@
     <meta property="og:description" content="El planificador de viajes inclusivo, social y para toda la vida." />
     <meta property="og:type" content="website" />
     <title>Waddle · Viaja a tu manera</title>
+    <style id="mobile-hero-fixes">
+      /* La pista "Arrastra el globo" se separa del globo (todos los tamaños) */
+      .mesh-bg .-bottom-1 { bottom: -1.9rem !important; }
+      @media (max-width: 767px) {
+        .mesh-bg { min-height: auto !important; padding-top: 5.5rem !important; padding-bottom: 2.5rem !important; }
+        .mesh-bg [style*="440px"] { width: min(300px, 78vw) !important; height: min(300px, 78vw) !important; }
+        .mesh-bg h1 { font-size: 2.4rem !important; line-height: 1.08 !important; }
+        .mesh-bg .bottom-6 { display: none !important; }
+        .mesh-bg .md\:justify-end { margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        /* Centrar contenido de las tarjetas en móvil (solo tarjetas rounded-3xl; wizard y mockups no se afectan) */
+        .bg-white.rounded-3xl, .bg-ink.rounded-3xl { text-align: center !important; }
+        .bg-white.rounded-3xl [class*="rounded-2xl"], .bg-ink.rounded-3xl [class*="rounded-2xl"],
+        .bg-white.rounded-3xl [class*="rounded-xl"] { margin-left: auto !important; margin-right: auto !important; }
+        .bg-white.rounded-3xl .flex.items-start { justify-content: center !important; }
+      }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
