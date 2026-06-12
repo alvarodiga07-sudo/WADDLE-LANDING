@@ -183,7 +183,7 @@ export default function LandingGlobe({ size = 480, onCountrySelect, highlightSet
       </div>
 
       {/* Pista visual */}
-      <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 text-[11px] text-ink/40 font-medium whitespace-nowrap flex items-center gap-1.5">
+      <div className="absolute -bottom-7 left-1/2 -translate-x-1/2 text-[11px] text-ink/40 font-medium whitespace-nowrap flex items-center gap-1.5">
         <span className="inline-block w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
         Arrastra el globo · Toca un punto dorado
       </div>

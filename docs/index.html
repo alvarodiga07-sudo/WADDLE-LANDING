@@ -11,6 +11,10 @@
     <base href="/WADDLE-LANDING/">
     <title>Waddle · Viaja a tu manera</title>
     <style id="mobile-hero-fixes">
+      /* La pista "Arrastra el globo" se separa del globo (todos los tamaños) */
+      .mesh-bg .-bottom-1 {
+        bottom: -1.9rem !important;
+      }
       /* === Arreglos responsive de la cabecera (Hero) solo en móvil === */
       @media (max-width: 767px) {
         /* La sección Hero deja de forzar 100vh para que no se corte el contenido */
